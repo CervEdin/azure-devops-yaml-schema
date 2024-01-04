@@ -25,7 +25,7 @@ steps:
 - checkout: string # Required as first property. Configures checkout for the specified repository.
   clean: string # If true, run git clean -ffdx followed by git reset --hard HEAD before fetching.
   fetchDepth: string # Depth of Git graph to fetch.
-  fetchTags: string # Set to 'true' to sync tags when fetching the repo, or 'false' to not sync tags. See remarks for the default behavior.
+  fetchTags: boolean # Set to 'true' to sync tags when fetching the repo, or 'false' to not sync tags. See remarks for the default behavior.
   lfs: string # Set to 'true' to download Git-LFS files. Default is not to download them.
   persistCredentials: string # Set to 'true' to leave the OAuth token in the Git config after the initial fetch. The default is not to leave it.
   submodules: string # Set to 'true' for a single level of submodules or 'recursive' to get submodules of submodules. Default is not to fetch submodules.
